@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 262 Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my 262 Webpage</h1>
+        <div class="header">
+            <h1 class="logo"><img src="assets/images/logo.jpg" alt="my personal logo" width="100" height="100"></h2>
+            <div class="header-space">
+                <nav>
+                    <a class="active" href="#gallerySection">Gallery</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <div class="login-container">
+                          <input type="text" placeholder="Username" name="username">
+                          <input type="text" placeholder="Password" name="psw">
+                          <button type="submit">Login</button>
+                        </form>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="gallerySection">
+            <h1>Gallery</h1>
+            <div id="toggleButton" style="border: 1px solid rgb(242, 14, 14); padding: 10px; width: 100px; text-align: center; cursor: pointer; background-color: lightblue;">Click here</div>
+            <div id="content" style="display: none;">
+                <div class="gallery" id="galleryContainer"></div>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <div id="aboutToggle" style="border: 1px solid rgb(0, 0, 0); padding: 10px; width: 100px; text-align: center; cursor: pointer; background-color: #45a049;">Click here</div>
+            <p id="aboutContent" style="display: none;">
+                Hello, I am a 21-year-old individual with a profound fascination for coding and technology. My aspiration is to establish myself as a freelance web developer. Presently, I am pursuing a certificate course at the Southern Alberta Institute of Technology (SAIT), enhancing my expertise in web development. Alongside my formal education, I enjoy working independently with online learning and dedicate my free time to crafting personal projects and taking on assignments for others. I would greatly appreciate it if you could review my work. Please click on 'portfolio' below for more details.
+            </p>
+            <a href="https://github.com/fbgAK?tab=repositories" class="button" id="portfolioButton" style="display: none;">Portfolio</a>
+        </section>
+        <section id="contact">
+            <h3>Contact</h3>
+            <form id="contactForm">
+                <div>
+                    <input type="text" id="nameInput" placeholder="Your Name" required>
+                </div>
+                <div>
+                    <input type="email" id="emailInput" placeholder="Your Email" required>
+                </div>
+                <div>
+                    <textarea id="messageInput" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="button" id="submitButton">Send Message</button>
+            </form>
+        </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 262 Webpage 2023</p>
+    </footer>
+    <script src="client.js"></script>
+</body>
+</html>
